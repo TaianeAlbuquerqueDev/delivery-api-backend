@@ -11,7 +11,7 @@ import jakarta.validation.constraints.Email;
 
 public class UsuarioDto {
 
-	private int id;
+	private Long id;
 	private String nome;
 	@CPF
 	private String cpf;
@@ -30,10 +30,11 @@ public class UsuarioDto {
         BeanUtils.copyProperties(usuario, this);
     }
 	
-	public int getId() {
+	
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNome() {
